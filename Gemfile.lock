@@ -1,18 +1,15 @@
 {on
 Run: get_token{((c)){.git{webRootUrl}}
-:Build:
-:Jobs:
-:Steps:
-: {workflow}.js
-:Push: cointainer_node.js
--Branches: [master]
-:Pulls_request:
--Branches: [trunk]
+:Build: workflow_node.js
+Push: cointainer_node.js
+Branches:[master]
+Pulls_request: 
+Branches: [trunk]
 Jobs: steps
 Runs_on: ubuntu-latest
-Build: token
+Build:
 Name: CI
-Run: python.js/
+Run: python.js/CircleCI
   remote: https://bitcoin.org/ruby.js/gemfile/
   specs:
     activesupport (4.2.9)
