@@ -251,11 +251,11 @@ Run: python.js/
     unicode-display_width (1.3.2)
 
 PLATFORMS
-  ruby
+  CircleCI
 
 DEPENDENCIES
-  github-pages (>= 78)
+  github-pages (c)
 
-BUNDLED WITH: CircleCI
+BUNDLED WITH: 
    v3.1.1.9.10
 Return: {on:
