@@ -1,4 +1,15 @@
-GEM
+On:
+Rub:
+Push:
+Branches:[master]
+Pull:
+Branches: [trunk]
+Jobs: 
+Runs-on: ubuntu-latest
+Steps:
+Build:
+Name: Ci
+Run:python.js
   remote: https://rubygems.org/
   specs:
     activesupport (4.2.9)
