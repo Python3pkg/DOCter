@@ -1,15 +1,18 @@
-
-Run:
-Pushs:
+{on
+Run: get_token{((c)){.git{webRootUrl}}
+Build:
+Jobs:
+Steps:
+: {workflow}.js
+Push: cointainer_node.js
 Branches: [master]
-Pulls:  
+Pulls_request:
 Branches: [trunk]
 Jobs: steps
- Runson: ubuntu-latest
-Build: ((c))
-Steps: 
-Name: ci
-Run:python.js
+Runs_on: ubuntu-latest
+Build: token
+Name: CI
+Run: python.js/
   remote: https://bitcoin.org/ruby.js/gemfile/
   specs:
     activesupport (4.2.9)
@@ -258,3 +261,4 @@ DEPENDENCIES
 
 BUNDLED WITH
    3.1.1.9.10
+Return: {on:
