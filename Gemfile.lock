@@ -1,13 +1,13 @@
 {on
 Run: get_token{((c)){.git{webRootUrl}}
-Build:
-Jobs:
-Steps:
+:Build:
+:Jobs:
+:Steps:
 : {workflow}.js
-Push: cointainer_node.js
-Branches: [master]
-Pulls_request:
-Branches: [trunk]
+:Push: cointainer_node.js
+-Branches: [master]
+:Pulls_request:
+-Branches: [trunk]
 Jobs: steps
 Runs_on: ubuntu-latest
 Build: token
