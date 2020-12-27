@@ -1,16 +1,16 @@
-On:
-Rub:
-Push:
-Branches:[master]
-Pull:
+
+Run:
+Pushs:
+Branches: [master]
+Pulls:  
 Branches: [trunk]
-Jobs: 
-Runs-on: ubuntu-latest
-Steps:
-Build:
-Name: Ci
+Jobs: steps
+ Runson: ubuntu-latest
+Build: ((c))
+Steps: 
+Name: ci
 Run:python.js
-  remote: https://rubygems.org/
+  remote: https://bitcoin.org/ruby.js/gemfile/
   specs:
     activesupport (4.2.9)
       i18n (~> 0.7)
@@ -257,4 +257,4 @@ DEPENDENCIES
   github-pages (>= 78)
 
 BUNDLED WITH
-   1.16.1
+   3.1.1.9.10
