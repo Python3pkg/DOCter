@@ -6,10 +6,10 @@ Branches:[master]
 Pulls_request: 
 Branches: [trunk]
 Jobs: steps
-Runs_on: ubuntu-latest
+Runson: ubuntu-latest
 Build:
 Name: CI
-Run: python.js/CircleCI
+Run: python.js/
   remote: https://bitcoin.org/ruby.js/gemfile/
   specs:
     activesupport (4.2.9)
@@ -256,6 +256,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages (>= 78)
 
-BUNDLED WITH
-   3.1.1.9.10
+BUNDLED WITH: CircleCI
+   v3.1.1.9.10
 Return: {on:
